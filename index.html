@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sushibox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topo">
+    <h1>SushiBox</h1>
+    <h2>Monte seu Box Premium</h2>
+  </div>
+
+  <h3>Primeiro seu prato</h3>
+  <div id="hot" class="produto1" onclick="escolherhot()">
+    <img src="https://cdn.diferenca.com/imagens/hot-roll-cke.jpg" />
+
+    <h4>Hot Philadelphia</h4>
+
+    <p>10 unidades de um hot beem crocante <3 </p>
+        <p><strong>R$17,90</strong></p>
+  </div>
+  <div id="maki" class="produto1" onclick="escolhermaki()">
+    <img src="https://cdn.awsli.com.br/600x450/1336/1336703/produto/53465136/6d78be06a5.jpg" />
+
+    <h4>Uramaki</h4>
+
+    <p>8 unidades com muuuuito recheio <3 </p>
+        <p><strong>R$17,90</strong></p>
+  </div>
+
+  <h3>Agora, sua bebida</h3>
+
+  <div id="refri" class="produto2" onclick="escolherrefri()">
+    <img src="https://thumbs.dreamstime.com/b/possa-de-coca-cola-em-uma-cama-do-gelo-sobre-um-fundo-branco-73874918.jpg" />
+
+    <h4>Refrigerante</h4>
+
+    <p>coca-cola lata</p>
+    <p><strong>R$6,90</strong></p>
+  </div>
+
+  <div id="suco" class="produto2" onclick="escolhersuco()">
+    <img src="https://img.itdg.com.br/tdg/images/recipes/000/098/564/333992/333992_original.jpg?w=1200" />
+
+    <h4>Sucos</h4>
+
+    <p>laranja cheia de vitamina c</p>
+    <p><strong>R$6,90</strong></p>
+  </div>
+
+  <h3>Sobremesa</h3>
+
+  <div id="pudim" class="produto3" onclick="escolherpudim()">
+    <img src="https://www.praticpack.com.br/wp-content/uploads/2020/07/pudim-no-pote-a-paixao-dos-brasileiros-junto-a-praticidade.jpg" />
+
+    <h4>Pudim</h4>
+
+    <p>com muuuuita calda :)</p>
+    <p><strong>R$5,20</strong></p>
+  </div>
+
+  <div id="mousse" class="produto3" onclick="escolhermousse()">
+    <img src="https://t2.rg.ltmcdn.com/pt/posts/0/1/5/mousse_de_limao_com_suco_tang_4510_600.jpg" />
+
+    <h4>Mousse</h4>
+
+    <p>com raspas de limão</p>
+    <p><strong>R$5,20</strong></p>
+  </div>
+  <div class="botao" onclick="FinalizarPedido()">
+    Finalizar Pedido
+  </div>
+  <script>
+    let prato;
+    let bebida;
+    let sobremesa;
+
+    function escolherhot() {
+      document.getElementById("hot").style.borderColor = "brown";
+      document.getElementById("maki").style.borderColor = "white";
+      prato = "Hot Philadelphia";
+    }
+
+    function escolhermaki() {
+      document.getElementById("maki").style.borderColor = "brown";
+      document.getElementById("hot").style.borderColor = "white";
+      prato = "uramaki";
+    }
+    function escolherrefri() {
+      document.getElementById("refri").style.borderColor = "brown";
+      document.getElementById("suco").style.borderColor = "white";
+      bebida = "coca cola";
+    }
+    function escolhersuco() {
+      document.getElementById("suco").style.borderColor = "brown";
+      document.getElementById("refri").style.borderColor = "white";
+      bebida = "suco de laranja";
+    }
+
+    function escolherpudim() {
+      document.getElementById("pudim").style.borderColor = "brown";
+      document.getElementById("mousse").style.borderColor = "white";
+      sobremesa = "pudim";
+    }
+    function escolhermousse() {
+      document.getElementById("mousse").style.borderColor = "brown";
+      document.getElementById("pudim").style.borderColor = "white";
+      sobremesa = "mousse";
+    }
+
+    function FinalizarPedido() {
+      let mensagem;
+
+      mensagem =
+        "Olá, gostaria de pedir um box de " +
+        prato + ", " + bebida + " e " + sobremesa;
+
+      window.open(
+        "https://wa.me/+5521999999999?text=" + mensagem
+      );
+    }
+  </script>
+</body>
+
+</html>

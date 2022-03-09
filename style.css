@@ -1,0 +1,89 @@
+body {
+  background: black;
+  color: #febe01;
+}
+.topo {
+  background: #febe01;
+  color: #000000;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #555454;
+}
+.produto1 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #302f2f;
+  cursor: pointer;
+  border: 5px solid white;
+}
+.produto2 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #302f2f;
+  cursor: pointer;
+  border: 5px solid white;
+}
+.produto3 {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #302f2f;
+  cursor: pointer;
+  border: 5px solid white;
+}
+img {
+  width: 120px;
+  float: right;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+h1 {
+  margin: 0;
+  font-family: Montserrat black;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-family: Montserrat light;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: Montserrat regular;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-family: Montserrat light;
+}
+p {
+  font-family: Montserrat light;
+  font-size: 13px;
+}
+strong {
+  font-family: Montserrat;
+}
+.botao {
+  background: #febe01;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  cursor: center;
+  font-family: Montserrat regular;
+}
